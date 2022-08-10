@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    
+}
+.container{
+    background-color: #649;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja{
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    background-color: #048;
+    margin: 20px;
+    text-align: center;
+    transition-duration:1s;
+}
+.item1:hover{
+    transform: translate(100%, -20px);
+    /* TraslateX: moverlo en el eje X., trasleteY: moverlo en el eje Y 
+    Traslate: es el shorthand de ambos y como vemos se pueden ocupara ambas
+    medidas tanto pixelex como porcentaje %*/
+}
+.item2:hover{
+    transform:  scale(1.8, 1.8);
+    /* scaleX: scalarlo en el eje x., scaleY: scalarlo en eje Y: esto significa aumentar su tamaño
+    del mismo elemento las veces que queramos, el doble el triple por ejamplo. */
+    /* scale: es el shorthand de ambos anteriores. */   
+}
+.item3:hover{
+    transform: skew(20deg);
+    
+    /* skew: deforma el elemento en grados, como un circulo, direccion contra reloj. */
+}
+
+p:hover{
+    transform: skew(-20deg);
+}
+
+
+
+
