@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.item1, .item2, .item3{
+    margin: 20px;
+}
+
+
+:root{
+    --var-global:#90d;
+    /* con ":root" creamos una variable global en donde podemos agregar cual quier parametro
+    y cualquier selector que la invoque, obtendre ese parametro.  */
+}
+.item1{
+    height: 80px;
+    width: 80px;
+    background-color: var(--var-global);
+}
+.item2{
+    --var-local:#2d3;
+    height: 80px;
+    width: 80px;
+    background-color: var(--var-local);
+}
+.item3{
+    --var-global:#f00;
+    /* redefinimos la variable global en este selector localmente, y automaticamente 
+    el mismo obtiene los parametros modificados. */
+    height: 80px;
+    width: 80px;
+    background-color: var(--var-global);
+}
