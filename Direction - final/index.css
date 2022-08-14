@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    /* hace un scroll suabe hasta el apartado qeu tienes que bajar */
+}
+
+.container {
+    background: #24f;
+    padding: 30px;
+    direction: rtl;
+    /* rtl: (right to left) esto nos pega el texto a la derecha  */
+    letter-spacing: 4px;
+    /* Esto nos forma un espacio o separacion entre cada letra  */
+    user-select: none;
+    /* hace que no podamos seleccionar el texto por ende no podemos
+    no pude copiar, no puede buscar en google */
+}
+
+h2 {
+    font-size: 1.9em;
+    text-align: center;
+}
