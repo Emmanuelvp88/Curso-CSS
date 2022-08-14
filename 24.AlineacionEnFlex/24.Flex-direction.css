@@ -1,0 +1,72 @@
+/*La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible.
+Los elementos flexibles pueden ser estirados para utilizar el espacio disponible proporcional a su factor de crecimiento flexible o su factor de contracción flexible
+para evitar desbordamiento.*/
+*{
+	font-family: 'ubuntu', sans-serif;
+	font-weight: 600;
+}
+h2{
+	margin: 10px;
+}
+a{
+	font-size: 2em;
+}
+
+
+
+
+.flex-container{
+	display: flex;
+	text-align: center;
+	flex-direction: row-reverse; /* row es el valor por defecto de la propiedad "flex-direction: row;"  indica que los elemetos corren de izquierda a derecha */
+}
+.flex-container__item{
+	width: 50px;
+	height: 50px;
+	background: #22f;
+	margin: 20px;
+}
+.red{
+	background: #f00;
+}
+.yellow{
+	background: #ff0;
+}
+/* 
+flex-direction
+Se aceptan los siguientes valores:
+
+La propiedad CSS flex-direction especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés).
+
+row
+El eje principal del contenedor flexible está definido para ser el mismo que la dirección del texto. Los puntos principales de inicio y final son los mismos que la dirección del contenido.
+
+row-reverse
+Se comporta igual que row pero los puntos principales de inicio y final son intercambiados.
+
+column
+El eje principal del contenedor flexible es el mismo que el eje del bloque. Los puntos principales de inicio y final son los mismos que los puntos de antes y después del modo escritura.
+
+column-reverse
+Se comporta igual que column pero los puntos principales de inicio y final son intercambiados.*/
+
+
+
+/*flex-direction: column;*/
+/*Se encarga de poner los item en columna y si aplicamos "column-reverse" los item correran de abajo hacia arriba.*/
+.flex-column{
+	display: flex;
+	flex-direction: column-reverse;/*las cajas (items) corren en direccion del "cross-axis", en forma de columna, con el item1 invertido primer item abajo ultimo item arriba.*/
+}
+.item-column{
+	width: 50px;
+	height: 50px;
+	background: #0ff;
+	margin: 10px;
+}
+.celest{
+	background: #19f;
+}
+.violet{
+	background: #d0d;
+}

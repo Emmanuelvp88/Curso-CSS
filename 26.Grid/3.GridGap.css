@@ -1,0 +1,34 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    /*3 celdas de 150px en Filas*/
+    grid-template-columns: repeat(5, 1fr);
+    /*5 celdas de 1 fraccion en las columnas*/
+    border: 3px solid #000;
+    gap: 20px 5px;
+    /* 20px de espacio entre filas y 5px de espacio entre columnas */
+    /* NOTA: a qui emos echo una GRILLA de 3 FILAS por 5 COLUMNAS, y apesar
+    dequela grilla no esta llena, es por que solo emos ingresado 9 items pero
+    enrealidad tenemos las demas celdas de la grila sin ocupar, son 6 celdas desocupadas*/
+}
+
+.grid-item {
+    border: 3px solid #000;
+}
+
+.grid-container :first-child {
+    margin-left: 20px;
+}
+
+
+/* De esta manera se seleciona el numero de posicion de los hijos de un 
+Grid-container, para solo darle cirta propiedad a ese hijo seleccionado */
+
+.grid-container :nth-child(6) {
+    margin-left: 20px;
+}

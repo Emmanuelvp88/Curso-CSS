@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.container div {
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.blue {
+    background: #00f;
+    order: 4;
+}
+
+.red {
+    background: #f00;
+}
+
+.green {
+    background: #0f0;
+}

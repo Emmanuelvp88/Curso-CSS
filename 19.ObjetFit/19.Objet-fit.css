@@ -1,0 +1,68 @@
+*{
+	font-family: 'Ubuntu', sans-serif;
+}
+a{
+	color: #bf004b;
+	font-size: 20px;
+	font-weight: 600;
+}
+/*contain
+El contenido reemplazado está dimensionado para mantener su relación de aspecto mientras se ajusta dentro del cuadro de contenido del elemento: su tamaño de objeto concreto se resuelve como una restricción de contenido contra el ancho y la altura utilizados del elemento.
+*/
+.objet-fit_contain img{
+	object-fit:contain ;
+	border: 2px solid #f00;
+	height: 350px;
+	width: 470px;
+	margin: 30px;
+}
+/*cover
+El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento. Si la relación de aspecto del objeto no coincide con la relación de aspecto de su caja, entonces el objeto se recortará para que se ajuste.
+*/
+.objet-fit_cover img{
+	object-fit:cover ;
+	border: 2px solid #f00;
+	height: 350px;
+	width: 470px;
+	margin: 30px;
+}
+
+
+
+/*fill
+Modifica el tamaño del elemento remplazado para llenar el cuadro de contenido. El objeto completo ocupará todo el espacio de la caja. Si el tamaño del elemento no concuerda con el de su caja, se estirará para llenarlo.
+*/
+.objet-fit_fill img{
+	object-fit:fill;
+	border: 2px solid #f00;
+	height: 350px;
+	width: 470px;
+	margin: 30px;
+}
+
+
+
+
+/*none
+El contenido reemplazado no se redimensiona.
+*/
+.objet-fit_none img{
+	object-fit:none ;
+	border: 2px solid #f00;
+	height: 350px;
+	width: 470px;
+	margin: 30px;
+}
+
+
+
+/*scale-down
+El contenido se dimensiona como si none o contain estuvieran especificados, lo que resultaría en un tamaño de objeto concreto más pequeño.*/
+.objet-fit_scale-down img{
+	object-fit:scale-down;
+	border: 2px solid #f00;
+	height: 350px;
+	width: 470px;
+	margin: 30px;
+}
+

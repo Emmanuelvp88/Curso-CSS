@@ -1,0 +1,44 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(max-content, 1fr));
+    /* max-content: ajusta la caja al maximo contenido, esto quiere decir que no es flexible
+    no modifica el contenido el contenido se queda tal y como es */
+    grid-template-rows: repeat(3, min-content, 1fr);
+    /* min-content: ajusta el contenido a lo minimo que se pueda, esto quiere decir que
+    la caja item se encojera lo mas que se pueda la palabra mas grande del contenido. */
+    /* minmax(): es una funcion que se encarga de ponernos el minimi que se reducira la caja item
+    y el maximo que se agrandara
+    NOTA: dentro de esta funcion tambiein podemos poner min-content y max-content si asi lo deseamos*/
+    background: #aaa;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* auto-fill: autoacompletado, se encarga de generar mas columnas conforme se valla haceindo
+    mas grade el contenedor grid deacuerdo a las dimenciones que le demos alos items, osea que si 
+    le dimos al los items 100px min y 1fr max al llegar a cierto tamaño de su maximo creara columnas 
+    nuevas generando asi mas items. */
+    /* auto-fit:  hace casi lo mismo que autofill, solo que este no genera mas fillas, en su tamaño 
+    minimo del contenedor apila a los items y en su tamaño maximo el contenedor alinea los items declarados
+    en una sola fila sin crear mas columnas.*/
+    grid-template-rows: repeat(3, 100px);
+    background: #999;
+}
+
+
+/* NOTA: todas estas propiedaddes: min-content. max-content. minmax(). auto-fill. auto-fit.
+son propiedades que sele da a la funcion repeat(). esto quiere decir qeu solo se pueden usar 
+dentro de un repeat(). y se les da a el Grid DIMAMICO*/
+
+.grid-item {
+    border: 3px solid #000;
+}
+
+.grid-item2 {
+    border: 3px solid #000;
+}

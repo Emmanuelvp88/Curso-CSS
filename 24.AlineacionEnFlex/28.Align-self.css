@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+div>div {
+    height: 100px;
+    width: 100px;
+    background: #00f;
+    margin: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+a {
+    font-size: 30px;
+}
+
+.green {
+    background: #0f0;
+    align-self: flex-start;
+}
+
+.red {
+    background: #f00;
+    align-self: center;
+}
+
+.blue {
+    background: #00f;
+}
+
+.yellow {
+    background: #ff0;
+}
+
+
+/*(Align-self)  tiene los mismos atributs que cualquier caractersitica de los items "flex-start", "center", "flex-end", "baseline", "stretch", y "auto"
+solo que este sirve para mover un solo elemento separadolo de los demas, pero igual se tiene que ajustar a las propiedades de la caja padre. */
+
+
+/*auto
+Se calcula acorde al valor de align-items del padre, o al de stretch si el elemento no tiene padre.
+
+flex-start
+El límite transversal inicial del elemento flexible es unido al borde transversal inicial de la línea.
+
+flex-end
+El límite transversal final del elemento flexible es unido al borde transversal final de la línea.
+
+center
+Los límites del elemento flexible son centrados dentro de la línea en su eje transversal. Si el tamaño transversal del elemento es superior al del contenedor, se excederá por igual hacia ambas direcciones.
+
+baseline
+Todos los elementos flexibles son ajustados de modo que sus bases estén alineadas. El elemento con la distancia mayor entre su límite transversal inicial y su base es combinado con el borde transversal de la línea.
+
+stretch
+Las elementos flexibles son estirados de modo que el tamaño transversal de sus límites sea el mismo de la línea, manteniendo sus restricciones de anchura y altura.*/

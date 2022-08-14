@@ -1,0 +1,43 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+    color: #fff;
+}
+.grid-item {
+    border: 3px solid #000;
+    background: #999;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 
+    [f-line]
+    150px
+    [s-line]
+    150px
+    [t-line]
+    150px
+    [f-line]
+    150px;
+
+/* En vez de poner de que numero de linea hasta que numero de linea debe de abarcar
+nuesta caja items, le ponemos nombre a las lineas */
+    grid-template-columns:
+    [f-column]
+    150px
+    [s-column]
+    150px
+    [t-column]
+    150px
+    [f-column]
+    150px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.grid-item:nth-child(1){
+    grid-row: f-line / t-line;
+    grid-column: f-column / t-column;
+    background: #4f5;
+}
+
+

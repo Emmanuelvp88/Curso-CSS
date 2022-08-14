@@ -1,0 +1,92 @@
+a {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.items {
+    background: #acd;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* Estas son todas las formas de Alineacion en el cross-axis*/
+
+
+/*Esta propiedad se le da al contenedor para que surja efecto en todos los items,
+en este caso le dimos a cada item una diferente propiedad para visualizar los efectos
+que tiene en cada uno.*/
+
+.stretch {
+    display: flex;
+    align-items: stretch;
+    /*Si yo saco esta propiedad, el item quedara igual ya que es
+	la que viene por defecto*/
+}
+
+.start {
+    display: flex;
+    align-items: flex-start;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+
+/*NOTA:  La diferencia entre el "aling-content" del "aling-item"  es que uno se usa para
+cuando hay una sola linea de items: "align-item"  y el otro se usa cuando hay mas
+de una linea de items: "align-content" porque el efecto que nos da el align-content
+es que los items los junta ilera tras ilera y el align-item los separa como si direa un margin-top
+y margin-bottom.*/
+
+
+/*NOTA: Con respacto el margin en las cajas Flex, este actua al reves que en las cajas normales que
+no son flex-box, asi que por ejemplo si damos un "margin-top: 0px;"  la caja se movera totalmente hacia abajo
+como si dieamos un margin-botton: 0px;  es totalmente lo contrario y asi con todos los atributos del margin.*/
+
+
+/* Palabras Clave Basicas
+align-items: normal;
+align-items: stretch;*/
+
+
+/* Alineamiento posicional
+align-items no considera los valores de "left" o "right" 
+align-items: center;  Agrupa los elementos alrededor del centro
+align-items: start;  Agrupa los elementos desde el inicio 
+align-items: end;  Agrupa los elementos desde el final 
+align-items: flex-start;  Agrupa los elementos flex desde el incio 
+align-items: flex-end;  Agrupa los elementos flex desde el final 
+align-items: self-start;
+align-items: self-end;*/
+
+
+/* Alineamiento de Linea Base
+align-items: baseline;
+align-items: first baseline;
+align-items: last baseline; Alineamiento de desborde (solamente para alineamiento posicional)
+align-items: safe center;
+align-items: unsafe center;
+
+ Valores globales 
+align-items: inherit;
+align-items: initial;
+align-items: unset;*/

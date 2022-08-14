@@ -1,0 +1,21 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px 150px);
+    /* aqui sestamos diceiendo que nos cree 3 pares de  filas de 100 y 150px, asi que va crear
+    la grilla una fila de 100px y otra de 150px multiplicada por 3, osea seria una 100px otra 150px
+    hasta lelgar al total de 6 filas, quedarian 3 filas de 100px y 3 de 150px intercaladas. */
+    grid-template-columns: repeat(3, 80px 1fr);
+    /* Repeat() se encarga de abrebiar el numero de filas y columnas que deseas que tenga nuestra Gilla
+    con los Grig-templates sea rows(Filas) o columns(Columnas), se encargara de declarar el numero de celdas
+    y los Item se iran acomodonda por defecto horizontalmente uno tras otro.*/
+    /* NOTA: no importa cuantas celdas has creado un tu grilla sino se alcanzan a cubrir, las celdas estaran ahi
+    sin asignar, solo sera cuestion de crear items para peterlos en las celdas sobrates. */
+}
+
+.grid-item {
+    border: 3px solid #000;
+}

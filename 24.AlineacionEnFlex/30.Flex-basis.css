@@ -1,0 +1,28 @@
+.container{
+	display: flex;
+}
+div > div{
+	height: 100px;
+	width: 100px;
+	margin: 5px;
+	text-align: center;
+}
+.color1{
+	background: #f3c;
+	flex-basis: 300px;
+	min-width: 200px ;
+}
+.color2{
+	background: #3f0;
+}
+.color3{
+	background: #4ad;
+}
+/*La propiedad de CSS flex-basis especifíca la base flexible, la cual es el tamaño inicial
+de un elemento flexible. Ésta propiedad determina el tamaño de una caja de contenidos
+a no ser que se haya especificado de otra forma usando box-sizing.*/
+
+/*Flex-basis hace lo mismo que el width pero con mas inportancia, ya que tiene mas jerarquia.
+aparte dentro de una caja flexible es lo que regularmente se ocupa para darle el tamaño de 
+anchura a las cajas flex en lugar del width, asi que acotumbremonos a usar "flex-basis" 
+en lugar del "width" por lo menos dentro de las cajas flexibles. */

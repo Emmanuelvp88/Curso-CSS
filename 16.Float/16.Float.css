@@ -1,0 +1,32 @@
+/*Float se encarga de que los elementos se posicioenen ya sea a la derecha o a la izquieda
+de su caja contenedora conservando el espacio en memoria de donde lo muevas "float: left;"
+"float: rigth;" hace que el texto que ingreses en la misma caja rodee a el elemnto que tiene
+el float */
+
+/*La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor,
+permitiendo a los elementos de texto y en línea aparecer a su costado.
+El elemento es removido del normal flujo de la página, aunque aún sigue siendo parte del flujo
+(a diferencia del  posicionamiento absoluto).
+Un elemento flotante es un elemento en el que el valor calculado de float no es igual a none.
+Como float implica el uso del layout de bloques, este modifica el valor calculado de los valores display , en algunos casos:*/
+
+
+*{
+	font-family: cursive;
+	font-size: 20px;
+}
+.content{
+	background: grey;
+	border:3px  solid red;
+	margin: auto;
+	margin-top: 30px;
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+	padding: 20px;
+	overflow: auto;
+}
+.content img{
+	float: right;
+	margin: 20px;
+}

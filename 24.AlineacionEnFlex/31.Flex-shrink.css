@@ -1,0 +1,33 @@
+.container{
+	display: flex;
+}
+div > div{
+	height: 100px;
+	width: 100px;
+	text-align: center;
+}
+.color1{
+	background: #ef3;
+	flex-shrink: 2;/*esta caja se va encojer el dobre que las demas, va seder el doble de espacio 
+	que las otras 2 cajas*/
+}
+.color2{
+		background: #3fe;
+}
+.color3{
+	background: #91d;
+}
+
+/*La propiedad CSS flex-shrink especifica el factor de contracción de un flex item.
+Los flex items se encogerán para llenar el contenedor de acuerdo a su número flex-shrink ,
+cuando el tamaño por defecto de los flex items sea mayor al de su contenedor flex container.*/
+
+/*El "flex-shrink" es como el  "flex-grow" pero a la inversa, en vez de repartirse el espacio
+sobrabte, se reparte el espacio restante, es ddecir que este hace que las cajas items sedan
+espacio para que todas los item entren dentro de su contenedor flex, es decir que si tengo 3 cajas
+item teneiendo encuenta que todas por defecto tienen un flex-shrink: 1; y a una le doy "flex-shrink: 2;"
+esto quiere decir que a la caja que le di el flex-shrink: 2;  esa va a seder el doble de espacio que las demas
+cuando se  el caso de que el contenedor no tenga los suficientes px para que todas entren con su tamaño asignado
+de iguan manera si le damos un "flex-shrink: 0;" le estamos diciendo que esa caja que tiene el flex-shrink
+no va ceder nada de espacio a la hora de que el contenedor se encoja, todas las demas cajas van a empezar
+a encgerce menos esa que tiene la propiedad "flex-shrink: 0;"*/

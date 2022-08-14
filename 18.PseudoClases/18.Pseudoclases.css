@@ -1,0 +1,114 @@
+
+*{
+	font-family: 'ubuntu', monospace;
+}
+
+
+/*La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador,
+pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor
+(puntero del mouse).*/
+.texto{
+	width: 100px;
+	height: 100px;
+	background: slateblue;
+	padding: 10px;
+	font-size: 20px;
+	transition: 1s;/*el transition se pone en la caja contenedora o caja padre, para que la trasicion se aga apropiadamente
+    y al regresar el elemento a su estado normal no lo haga de golpe, eso pasaria si ponemos el transition en la caja hija.*/
+	margin: 50px;
+	border: 2px solid greenyellow;
+	box-shadow: 10px 5px 10px black;
+
+}
+.texto:hover{/*Caundo pasemos el puntero en este elemento en la pagina, se pondran todas las propiedades que tenemos 
+qui dentro, surgiran todos los cambios que allamos echo aqui.*/
+	background: greenyellow;
+	width: 200px;
+	height: 200px;
+	border: 2px solid purple;
+	box-shadow: 10px 5px 10px black;
+}
+
+
+
+
+a{
+	display: block;
+/*Tenemos que convertir a "block" estos enlaces para que se puedan alinear*/
+}
+
+a:link{/*La pseudo-clase :link CSS representa un elemento que aún no se ha visitado.
+Coincide con cada elemento no visitado <a>, <area>, o <link> que tiene un atributo href.*/
+	color: #88ff00;
+	margin: 50px;
+/*Por defecto, la mayoría de los navegadores aplican un valor especial color a los enlaces visitados.
+Por lo tanto, los enlaces de este ejemplo probablemente tendrán colores de fuente especiales solo antes de visitarlos.
+(Después de eso, deberá borrar el historial de su navegador para volver a verlos).
+Sin embargo, es probable que los valores de background-color permanezcan, ya que la mayoría de los navegadores
+no establecen esa propiedad en los enlaces visitados de forma predeterminada.*/
+}
+
+
+
+a:visited{
+/*La pseudo-clase :visited de CSS  representa enlaces que el usuario ya ha visitado. Por motivos de privacidad,
+los estilos que se pueden modificar con este selector son muy limitados.*/
+	color: #c000fa;
+	margin: 50px;
+/*Las propiedades que de otro modo no tendrían ningún color o serían transparentes no se pueden modificar con :visited.
+De las propiedades que se pueden establecer con esta pseudo-clase, su navegador probablemente
+solo tenga un valor predeterminado para color y column-rule-color. Por lo tanto, si desea modificar las otras propiedades,
+deberá darles un valor base fuera del selector :visited.*/
+}
+
+
+
+
+.caja1{
+	background: red;
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	font-size: 20px;
+	text-align: center;
+	padding: 70px 0;
+	
+}
+.caja1:active{/*La pseudo-clase (en-US) :active de CSS  representa un elemento (como un botón) que el usuario está activando.
+Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta.
+La pseudo-clase :active se usa comúnmente en los elementos <a> y <button>, pero también se puede usar en otros elementos.*/
+	background: purple;
+	color: greenyellow;
+	outline: 3px solid yellowgreen;
+}
+
+
+
+
+.input1{
+	margin: 0 50px;
+	outline: 2px solid red;
+	transition: .5s;
+}
+.input1:focus{/*La pseudo-clase :focus CSS representa un elemento (como una entrada de formulario) que ha recibido el foco.
+Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.
+usualmente se utilizan el los "input" cuando lo seleccionas lo enfocas y se ejecutan los cambios que le dimos*/
+	outline: 3px solid greenyellow;
+	background: purple;
+	color: greenyellow;
+	margin: 0 50px;
+	padding: 10px;
+}
+
+.caja2{
+	margin: 50px;
+}
+
+.caja2 b:lang(en){/*La pseudo-clase :lang() de CSS es utilizada para modificar elementos en función del idioma en el que se determina que están.
+practicamente el la Pseudoclase "lang" es una funcion que recibe un parametro el cual es enviado desde el archivo HTML, a cualquier etiqueta 
+le podemos dar el atributo lang = "en"  y mandarle un parametro para que en el lang del archivo CSS lo reciba el lang que esta ahi
+poniendole el mismo parametro "en" que esto significa que le estamos diciendo que esta escrito en "english" podemos enviarle el parametro que
+nostros querramos dependiendo contenido de la etiqueta en que idioma esta escrito.*/
+
+	color: rebeccapurple;
+}/*NOTA: este actua mas bien como una seleccion por atributo.*/

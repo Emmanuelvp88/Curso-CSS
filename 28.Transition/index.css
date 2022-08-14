@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #4f5;
+    padding: 20px;
+}
+
+.caja {
+    background: #def;
+    height: 70px;
+    width: 70px;
+    margin: 20px 0px;
+    position: relative;
+    /* Tenemos que posisionar la caja que le vamos a dar la transicion para que hagarre
+    las propiedades left, rigth, top y bottom */
+    transition-property: left, background, width;
+    /* Transition-property se encarga de darle la transision a la propiedad que le espesifiquemos
+    podemos darle transiciones a todo con "all" pero no es recomendable porque consuem muchos recuros
+    y es mejor darle solo a la propiedad que ocupemos. */
+    transition-duration: 2s, 1s;
+    /* transition-duration es la duracion de la transicion en segundos */
+    left: 0;
+    /*este left es solo para qu empieze desde cero la transicon*/
+
+}
+
+/* transition se resume en: nombre de la propiedad | duración | función | retardo */
+/* transition: margin-left 4s ease-in-out 1s; */
+.container:hover>.caja{
+    background: #f44;
+    left: 100%;
+    width: 3px;
+}
+
+/* El transition-timing-function solo manipula el tiempo del moviminto de la transicion  
+Veamos unos ejemplos a qui abajo*/
+.caja:first-child {
+    transition-timing-function: linear;
+    /* linear lleva un moviminto uniforme semilento */
+
+}
+
+.caja:nth-child(2) {
+    transition-timing-function: ease-in;
+    /* ease-in empiza lento y termina rapido */
+}
+
+.caja:nth-child(3) {
+    transition-timing-function: ease-out;
+    /* ease-out empieza rapido y termina lento */
+}
+
+.caja:nth-child(4) {
+    transition-timing-function: ease-in-out;
+    /* ease-in-out es una mezcla entre los dos anteriores, empieza lento 
+    en medio es rapido y al final termina lento  */
+}
+
+.caja:nth-child(5) {
+    transition-timing-function: ease;
+    /* ease es el valor por defecto, lleva una velocidad semirapida */
+}

@@ -1,0 +1,37 @@
+*{
+	font-family: 'ubuntu', sans-serif;
+
+}
+h2{
+	padding: 10px;
+}
+a{
+	font-size: 20px;
+	color: #000;
+	font-weight: 800;	
+}
+
+
+/*La propiedad object-position determina el alineamiento del elemento dentro de la caja.*/
+
+/*Alineacion de la imagen dentro de la caja Hacia la derecha*/
+.objet-position_rigth img{
+	border: 3px solid #294;
+	width: 270px;
+	height: 350px;
+	object-fit: cover;
+	object-position: rigth;
+	margin: 30px;	
+}
+
+/*Alineacion de la imagen dentro de la caja Hacia la izquierda*/
+.objet-position_left img{
+	border: 3px solid #294;
+	width: 270px;
+	height: 350px;
+	object-fit: cover;
+	object-position: left;
+	margin: 30px;		
+}
+
+/*Y asi mismo con "top" y "buttom"*/

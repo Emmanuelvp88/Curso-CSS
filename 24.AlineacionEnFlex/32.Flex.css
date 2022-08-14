@@ -1,0 +1,24 @@
+.container{
+	display: flex;
+}
+div > div{
+	height: 100px;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	margin: 5px;
+}
+.color1{
+	background: #3f5;
+	
+}
+.color2{
+		background: #3fe;
+}
+.color3{
+	background: #91d;
+}
+/*La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible
+para alterar sus dimensiones y llenar el espacio disponible.
+Los elementos flexibles pueden ser estirados para utilizar el espacio disponible
+proporcional a su factor de crecimiento flexible o su factor de contracción flexible para evitar desbordamiento.*/

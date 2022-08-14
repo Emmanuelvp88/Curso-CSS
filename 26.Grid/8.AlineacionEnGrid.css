@@ -1,0 +1,105 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+}
+
+.grid-container {
+    display: grid;
+    font-size: 1.5em;
+    color: #fff;
+    background: #999;
+    height: 600px;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+
+    justify-items: end;
+    /*(justify-items)Alinea los items en el eje"X"*/
+    align-items: start;
+    /* (align-items) Alinea los items en el eje"Y"*/
+    justify-content: space-evenly;
+    /* (jsutify-content) alinea todas las columnas osea practicamente todo el cntenedor en el cross-axis "x" */
+    align-content: space-between;
+    /* (align-content) alinea todas las filas osea practicamente todo el cntenedor en el cross-axis "Y" */
+
+    /* NOTA:
+    "justify" alinear en el eje"X" 
+    "align" alinear en el eje "Y"
+    "items" para mover el contenido dentro de los items 
+    "content" para mover columnas y filas dentro del contenedor practicamente mover todo el contenedor*/
+
+    /* NOTA:  A los  "content" osea al contenedor tambien se le pueden poner las propiedades
+    (sapce-beetwen)(space-evenly)(space-around) */
+}
+
+.grid-item {
+    border: 3px solid #000;
+    padding: 20px;
+    background: #35a;
+}
+
+.grid-container2 {
+    display: grid;
+    background: #999;
+    font-size: 1.5em;
+    color: #FFF;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item2 {
+    border: 2px solid #000;
+    padding: 20px;
+    background: #fcfc;
+}
+
+
+/* En esta Grilla veremos la propiedad de alineacion de items por separado (aling-self) (justify-self) y el "sorthand" de ambos (place-self) 
+(align-self) Se encarga de la alinecion en el (cross-axis) "eje Y"
+(justify-self) se encarga de la alineacion en el (main-axis) "eje X"
+(place.self) es el "shortand" que suma estas dos propiedades, el promer parametro que recibe es(align-self) y el segundo (justify-self)
+practicamente su alineacion seria asi: (place-self: aling-self"eje Y"  justifity-self"eje X";)
+y sus parametros son "start" "center" "end"*/
+
+.grid-item2:first-child {
+    place-self: start start;
+    /*(place-self) es el sorthand de (aling-self) alineacion "eje Y", y de (justify-self)Alineaion en "eje X"*/
+    background: #0f4;
+}
+
+.grid-item2:nth-child(2) {
+    align-self: end;
+    /* (align-self) Alinea los items por separado. Alineacion en el (cross-axis) "eje Y" */
+}
+
+.grid-item2:nth-child(3) {
+    place-self: start end;
+    background: #0f4;
+}
+
+.grid-item2:nth-child(4) {
+    justify-self: end;
+    /* (justify-self) Alinea los items por separado. Alineacion en el (main-axis) "eje X" */
+}
+
+.grid-item2:nth-child(6) {
+    justify-self: start;
+}
+
+.grid-item2:nth-child(7) {
+    place-self: end start;
+    background: #0f4;
+}
+
+.grid-item2:nth-child(8) {
+    align-self: start;
+}
+
+.grid-item2:nth-child(9) {
+    place-self: end end;
+    background: #0f4;
+}
+
+
+/* NOTA: Tambien se le puede agregar (Order) que es lo mismo que en (Flex-box) */

@@ -1,0 +1,63 @@
+* {
+    font-family: 'UBUNTU', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    background: #f49;
+    flex-wrap: wrap;
+    /*Hace que las cajas se desborden hacia abajo cuando la resolucion de la pantalla llega alos limites de las cajas hijas (items felx)manteniendo sus dimenciones.*/
+}
+
+.red {
+    background: #f00;
+}
+
+.yellow {
+    background: #ff0;
+}
+
+
+/*
+flex-wrap.
+Se aceptan los siguientes valores:
+
+nowrap
+Los elementos flex son distribuidos en una sola línea, lo cual puede llevar a que se desborde el contenedor flex. El valor cross-start es equivalente a start o before según el valor de flex-direction.
+
+wrap
+Los elementos flex son colocados en varias líneas. El valor cross-start equivale a start o before dependiendo del valor flex-direction y cross-end implicaría lo opuesto a lo especificado por cross-start.
+las caja se desbordan asi abajo.
+
+wrap-reverse
+Actúa como wrap pero cross-start y cross-end están intercambiados. por ende los item se desbordaran asi arriba*/
+
+.flex-flow {
+    display: flex;
+    flex-flow: wrap-reverse row-reverse;
+    /* es un shorthand  del flex-direction y flex-wrap*/
+}
+
+
+/*Flex-flow*/
+
+
+/*La propiedad CSS flex-flow  es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap. y so le recominda usar cuando se vallan 
+a cambiar ambas propiedades (flex-direction y flex-wrap) de lo contrario se recomienda usar cada una por separado.*/

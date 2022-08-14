@@ -1,0 +1,116 @@
+/*Lista de pseudoelementos
+::after
+::before
+::first-letter
+::first-line
+::selection
+::backdrop
+::placeholder 
+::marker 
+::spelling-error 
+::grammar-error (en-US) 
+
+
+Los Pseudo-elenementos no forman parte del DOM pero si podemos ver los efectos visuales alos
+elementos que lo poseen, es parecido  aun "outline", estan y se ven pero no ucupan espacio.
+
+Notas:  Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores
+pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte
+concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera
+línea del elemento especificado por el selector.
+
+De vez en cuando se utilizan dos puntos dobles (::) en vez de solo uno (:).
+Esto forma parte de CSS3 y de un intento para distinguir pseudo-elementos de pseudo-clases.
+
+Nota: ::selection siempre se escribe con dos puntos dobles (::).
+Solo se puede usar un pseudo-elemento por selector. Debe aparecer después del selector simple.*/
+
+.content1 {
+	background: grey;
+	margin: 100px auto;	
+	padding: 50px;
+	width: 50%;	
+}
+.texto:first-line{/*"first-line" cambia las propiedades de la primara linea de texto*/
+	color: blue;
+	font-size: 30px;
+}
+.texto:first-letter{ /*"first-letter" cambia las propiedades de la primara letra de texto*/
+	color: red;
+	font-size: 4em;
+}
+
+
+
+
+
+.content2 {
+	margin: 0 auto;
+	padding: 30px;
+	background: grey;
+	width: 50%;
+}
+.content2 input{
+	width: 100%;
+	margin: 30px;
+	
+}
+.content2 input::placeholder{/*placeholder en ingles significa marcador de posicion El pseudo-elemento CSS
+::placeholder representa el texto provisional en un elemento <input> o un elemento <textarea>. 
+tambien podemos darle diferentes atributos como tamaño de letra,color de fondo etc. cabe mencionar
+que este elemento se pone direstamente en el archivo "HTML" en la etiqueta del elemento "input"
+como si fuera un atributo mas, y esto es para poner el texto que estara provicionalmente.*/
+	width: 100%;
+	background: purple;
+	color: yellowgreen;
+	font-size: 1.3em;
+}
+
+
+
+
+.content3{
+	margin: 50px auto;
+	background: grey;
+	width: 50%;
+	padding: 30px;
+}
+.content3 p::selection{/*::selection hace que lo que seleccionemos en una paguina web adquiera otras propiedades
+cambiando asi las que trae por defecto, que son un color de fondo como azul y las letras blancas, pues nosotros
+podemos cambiar esas propiedades a nuestro gusto.  
+El selector ::selection CSS pseudo-elemento aplica reglas a una porción de un documento
+que ha sido destacado (por ejemplo: selección con el mouse o algún otro puntero en un dispositivo) del usuario.
+Sólo un pequeño subconjunto de propiedades CSS pueden ser usadas en una regla  ::selection en el selector de:
+color, background, background-color y text-shadow. Nótese que, en particular, background-image es ignorado,
+como cualquier otra propiedad.*/
+	color: red;
+	background: yellow;
+	font-size: 30px;
+}
+
+
+
+
+
+.content4{
+	margin: 50px auto;
+	background: grey;
+	width: 50%;
+	padding: 30px;
+}
+.content4 b::before{/*En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado.
+Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content.
+Este elemento se muestra en línea con el texto de forma predeterminada.*/
+	content: "soy Emmanuel y estoy";
+	color: red;
+	
+}
+.content4 b::after{/*En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado.
+Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.}
+Es en linea (inline) de forma predeterminada.*/
+	content: "prendiendo CSS";
+	color: purple;
+}
+b{
+	background: greenyellow;
+}

@@ -1,0 +1,38 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-areas: "emma emma emma" "main aside aside" "main aside aside" "footer footer footer";
+    /*  */
+    height: 1000px;
+    border: 3px solid #000;
+}
+
+.grid-item {
+    padding: 10px;
+    border: 3px solid #000;
+}
+
+.header {
+    background: #2a9;
+    grid-area: emma;
+    /*con esta linea le asignamos los espacios que debera ocupar esta seccion*/
+}
+
+.main {
+    background: #a39;
+    grid-area: main;
+}
+
+.aside {
+    background: #ff3;
+    grid-area: aside;
+}
+
+.footer {
+    background: #33f;
+    grid-area: footer;
+}

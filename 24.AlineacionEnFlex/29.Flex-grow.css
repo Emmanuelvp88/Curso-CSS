@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+div>div {
+    min-width: 200px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+}
+
+.blue {
+    background: #00f;
+    flex-grow: 1;
+}
+
+.red {
+    background: #f00;
+}
+
+.green {
+    background: #0f0;
+    flex-grow: 2;
+}
+
+a {
+    font-size: 30px;
+}
+
+
+/*(fle-grow) lo que hace es que el espacio sobrante en el main-axis lo reparte entre las cajas, asiendola 
+proporcionales a todas, Por Ejemplo: sitenemos 3 cajs de 100px y de sobrante tenemos 800px,esos 800px se repartiran
+entre las 3 cajas items, asi que les tocaria de 266px aprox por caja, asi que cada caja quedaria de 366px cada una
+ya que se sumaria los 100px que ya tiene mas los 266px que le tocan del sobrante. */
+
+
+/*Ahora si queremos darle mas sobrante a una caja mas que a otra, debemos darle una clase y en vez de ponerle el
+"flex-grow" a el cotainer se lo damos al item y ponemos cuantos tramos del sobrante se le darian.*/

@@ -1,0 +1,28 @@
+body {
+    background: radial-gradient(circle, #999, #ddd);
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: repeat(5, 1fr);
+    border: 3px solid #000;
+    gap: 20px 5px;
+}
+
+.grid-item {
+    border: 3px solid #000;
+}
+
+
+/* De esta manerra se seleciona el numero de posicion de los hijos de un 
+Grid-container, para solo darle cirta propiedad a ese hijo seleccionado */
+
+.grid-container :first-child {
+    margin-left: 20px;
+}
+
+.grid-container :nth-child(6) {
+    margin-left: 20px;
+}

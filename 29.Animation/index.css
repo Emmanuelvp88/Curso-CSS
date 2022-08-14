@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    min-width: 100vw;
+}
+
+.hero {
+    background-image: linear-gradient(#0f0f0f99 , #0f0f0f9d), url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    width: fit-content;
+    /* Este parametro es necesario para que la nimacon se contenga dentro de su caja padre. */
+    position: relative;
+    /* Tambien debemos posicionarla para que tome los atributos left,top,rigth y bottom y pueda
+    moverse libremente la caja hijo.  */
+    animation: trasparent-text 1.3s ease-in;
+    animation-fill-mode: both;
+    color: transparent;
+}
+@keyframes trasparent-text{
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+
+}
+h1:nth-child(2){
+    animation-delay: 1s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+span {
+    width: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background: #5ef878;
+    animation: desplazar 1s  ease;
+    /* animation: es un shorthand deonde primero tenemos el nombre de la animacion, segundo la duracion
+    tercero el temporizador de la funcion que serian los mas importantes de poner en el shorthand, ya los
+    demas se pueden poner aparte por separado. 
+    Todas las funciones del animation: name: nombre de la animacion.,duration: duracion de la animacion.,
+    timing-function: temporizador de la animacion(ease,ease-in,ease-out,ease-in-out).,delay: retraso de la nimacion.,
+    iteration-count:conteo de iteracion, osea cuantas veces se repite la animacion.,direction: direccion de la animacion.,
+    fill-mode: modo de llenado, hay dos mas importantes que se ocupan una barbaridad y son (both) y (forwards)
+    both: se encarga de que la animacion arranque con la primera propiedad que le dimos., forwards: hace que se quede
+    la animacion en su eltimo movieminto.*/
+    animation-fill-mode: forwards;
+    /* Forwards: permite que permanesca con su ultimo cambio osea cuando lelga a 100%*/
+}
+
+@keyframes desplazar {
+    /* (50%) o (from)es el primer parametro, e indica como es que quieres que inicie una animacion,
+    osea con que prarametros quieres que iniicie la nimacion. */
+50% {
+        left: 0;
+        width: 100%;
+    }
+/* (100%) o (to) el ultimo parametro que se pone en una animacion, e indica como es que quieres que remine la nimacion*/
+    100% {
+        left: 100%;
+    }
+}
+/* le damos un delay al hijo 2 para que la trnasicion ocurra 1s despues,
+    la sintaxis del (nth-child()) para que afecte al hijo esta propiedad es poninendo el padre(h1) y despues el hijo(span)*/
+h1:nth-child(2) span{
+    animation-delay: 1s;
+}

@@ -1,0 +1,19 @@
+    body {
+        background: radial-gradient(circle, #999, #ddd);
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+    .grid-item {
+        border: 3px solid #000;
+    }
+    /* Grid-template-rows */
+    /* esta propiedad de grid nos permite seleccionar o crear FILAS en una grilla
+o contenedor GRID, alinear los Items en forma de FILA (Horizontal)  */
+    /* Grid-template-columns */
+    /* Esta propiedad de Grid nos permite alinear los grid items o las celdas de 
+forma VERTICAL o en forma de Columnas */
