@@ -1,0 +1,53 @@
+/*Un elemeto en "Bloque" es todo aquel que ocupa toda la linea completa de 
+la caja que la contiene, asi que no puedes agregar otra etiqueta al lado de
+esta por que no se agregarai a lado sino que quedaria en la linea siguinte
+abajo de esta ya que estos elemento en bloque ocupa toda la linea completa*/
+
+/*Un elemento en linea es toda quella etiqueta que ocupa solo el espacio suficiete
+que requiera su contenido, por ende las etiquetas que se declaren despues se 
+pondran al lado de ella sin dar salto de linea, ya que quedara espacio disponible
+en la misma linea.*/
+
+/*Veremos como trasformar las etiquetas en "bloque" a etiquetas en "linea"*/
+
+*{/*Asterisco significa "seleccionar todo"*/
+	font-size: 30px;/*aumentamos el tamaño de la letra*/
+	margin: 0;/* 0 margen */
+	padding: 0;/*0 relleno*/
+	font-family: georgia;/*Cambiamos la tipografia*/
+}
+
+
+.body_h2{/*Etiqueta "H2" es un elemento en bloque*/
+	color: blue;
+	line-height: 2;	 
+	font-family: cursive;	
+	display: inline;/*Con este elemento cambiamos el elemento de "bloque" a en "linea"*/
+}
+p{/*Etiqueta "P" es un elemento en bloque*/
+	color: red;
+	line-height: 2;
+	font-family: cursive;
+	display: inline;/*Con este elemento cambiamos el elemento de "bloque" a en "linea"*/
+}
+b{/*Etiqueta "b" es un elemeto en linea*/
+	color: yellow;
+	line-height: 2;
+	font-family: cursive;
+	
+
+}/*Con esto tendriamos en pantalla un texto corrido, una etiqueta tras otra
+ya que todos los elementos serian en "linea" */
+
+/*Otro dato muy importante es que a un elemento en linea no se le puede dar 
+"heigth ni witht" osea que no se puede modificar el tamño de su etiqueta*/
+
+/*Para que podamos hacer que un elemento en "linea" pueda adquirir las propiedades
+como si fuera un elemento en "bloque" devemos de usar el siguiente atributo */
+.body-p{
+	color: mediumpurple;
+	display: inline-block;
+	height: 40vh;
+	width: 70vw;
+}/*Como ven esta etiqueta "b" es un elemento en "bloque" pero lo convertimos
+a un elemento en "linea" pero sigue conservando sus propiedades.*/

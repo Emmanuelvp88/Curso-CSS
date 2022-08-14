@@ -1,0 +1,33 @@
+/*El "Normalize" es un archivo precargado que quita todas las caracteristicas
+que trae el navegador po rdefecto y es un archivo que podemos descargar de la Web
+ahora Vamos agregar unos parametros extras para la complementacion
+del "Responsive disig" Diseño responsivo, que esto sirve para que nuestra
+pagina Web de adapta a diferentes plataformas por ejemplo 
+en un celular o una tablet y porsupuesto en una comoutadora.*/
+
+img {
+    /*En el selector de "img" del archivo "normalize.css" vamos agregar el
+siguinte parametro*/
+    max-width: 100%;
+    /*Este parametro sirve para que las imagenes en los 
+	moviles se adapten al 100% */
+}
+
+* {
+    /*Este selector lo agregamos Nuevo y el asterisco "*" siginifica que los 
+cambios o parametros que agregemos en este selector tendran efectos en todos
+los selectorres osea en todas las etiquetas de la pagina */
+    box-sizing: border-box;
+    /* Este parametro es para que cuando le demos un 
+	tamaño espesifico  a una caja, ningun padding ni margin nos realize cambios
+	si no que complete al caja. Ejemplo: Si damos un  padding de 20 y la caja es 
+	de 30px si no tubiera el "border-box" simplemente se sumaria 20px arriba
+	de la caja + 20px abajo + los 30px de mi caja y el final mi caja cambiaria 
+	de tamaño a 70px y sin embargo con el "border-box"  la caja se complementaria 
+	con los pixeles de el "Padding" regularia la caja a medida que el tmaño quede
+	original con el tamaño qeu le dimos en un principio*/
+    padding: 0;
+    /*Muy importante poner "0" sin poner la unidad de medida ya que 
+	cualquier medida multiplicada por 0 nos dara 0*/
+    margin: 0;
+}

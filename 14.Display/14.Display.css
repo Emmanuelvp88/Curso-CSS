@@ -1,0 +1,36 @@
+/*Las propiedades del "display" son muchas citemos las mas importantes*/
+
+/*BLOCK:  "display: block ;  este es un elemento natural que manejan la 
+naturalmente en algunas etiquetas la estructura HTML nos da esta propiedad
+por defecto, y consiste en que los elementos que sean en "block" son elementos
+que se pueden modificar su ancho y alto, son cajas  que abarcan toda la linea
+del "viewport" aun que su contenido no lo necesite. */
+.display_block{
+	background: yellow;
+	border: 3px solid red;
+	height: 50px;
+	width: 200px;
+}
+
+/*INLINE: "display: inline; este elemetos en linea no se pueden modificar en ancho
+y alto pero tiene al ventaja de qeu su caja se acopla a su contenido, y regularmente
+se utilizan para poner texto "*/
+.display_inline{
+	background: greenyellow;
+	border: 3px solid lightskyblue;
+	height: 100px;
+	width: 100px;
+}
+
+/*INLINE-BLOCK:  "display: inline-block; este elemento tiene las ventajas y propiedades de 
+el block y el inline, asi que tiene propiedades como la de que su caja de acoplara al 
+texto o contenido asi que no ocupara toda la linea como los "block" y tambien se le podra 
+dar parametros de regimen como la altura y el ancho no como los "inline" que no de pueden 
+modificacar sus diemnciones "*/
+.inline_block{
+	background: lightcoral;
+	border: 3px solid blue;
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+}

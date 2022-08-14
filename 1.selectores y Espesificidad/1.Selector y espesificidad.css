@@ -1,0 +1,35 @@
+
+/*Veremos lo que es un "Selector" de Etiquetas*/
+*{/*Selector universal: todas les etiquetas cambiran del color seleccionada*/
+	color:red;
+}
+h1{/*Selector por Tipo: todas las etiqueetas de tipo "h1" cambiaran del color
+     Seleccionado*/
+	color: blue;
+}
+.por-clase{/*Selector por Clase: todas las Etiquetas que tengan la en nombre
+de la clase "color-h6" cambiarn al color indicado */
+	color: violet;
+}
+#por-id{/*Selector por ID: solo sele pone el simbolo de la almuadilla 
+	enseguda el nombre que se le puso al atributo "ID"*/
+	color: green;
+}
+[rancio]{/*Selector por atributo: se crea un atributo dentro de
+de la etiqueta ala que le quieres dar la modificacion y en archivo CSS se 
+tienen que enerrar en corchetes.*/
+	color: yellow;
+}
+.Desendiente {
+	color: orange;
+}
+.Desendiente b{
+	color: rosybrown;
+}
+
+[desendiente = "si"]{
+	color: grey;
+}
+[desendiente = "si"] b{
+	color: purple;
+}

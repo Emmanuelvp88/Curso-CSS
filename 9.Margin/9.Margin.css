@@ -1,0 +1,25 @@
+/*Ahora veremos "Margin" y sus propiedades*/
+
+
+/*El margin simplemente se encarga de darnos margenes fuera de la la caja
+osea de darnos separaciones entre caja y caja, y se maneja igual que un "Padding"
+"top", "rigth", "bottom","left"*/
+
+div>h2 {
+    color: red;
+    background: #396;
+    display: inline-block;
+    height: 30vh;
+    width: 30vw;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 1em;
+    /*Esto se encarga de redondear los bordes de las cajas*/
+    border: 3px solid blue;
+    /*El "Border" por defecto se empiza a cambiar los parametros primero
+	con el grosor,tipo,color*/
+}
+
+div {
+    position: relatives;
+}

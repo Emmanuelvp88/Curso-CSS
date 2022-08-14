@@ -1,0 +1,54 @@
+/*El "overflow" significa desboredaminto, se encarga de ocultar el contenido
+de la caja hija dentro de la caja padre osea que la caja hija si tiene 
+una domencion mayor qeu la caja que la contiene quedaria por enciama 
+y se saldria del cuandro, el overflow evita eso posiscionando la caja hija
+dentro de la caja padre haciendo un "scroll" en el eje "X" y en eje "Y"
+ahceindo que podamos visualizar la caja hija que se encuentra oculta dntro de
+la caja padre deslizando el scroll */
+
+/*El "overflow es un "shortand" eso significa que tiene propiedades aparte tambien
+podemos dibujar solo ya sea la barra del eje "x" (abajo de la caja) o en eje "Y"(en un costado)
+con los shortand "overflow: y;" u "overflow: x;"
+
+overflow: visible; dibuja barras si es necesario
+overflow: hidden; no se dibujan barras u ocultas baras existentes
+overflow: scroll; se dibujan ambas barras
+overflow: auto;  se dibujan barras según se necesite*/
+
+
+
+div{
+	font-size: 30px;
+	margin-top: 40px;
+	background: yellow;
+	width: 350px;
+	height: 350px;
+	overflow: auto;
+}
+
+.container{
+	width: 350px;
+	height: 350px;
+	margin-bottom: 300px;
+	background: dimgrey;
+	overflow: hidden;
+	outline: 3px solid greenyellow;
+
+	
+}
+
+img{
+	position: relative;
+	left: 250px;
+	top: 250px;
+	transition: all  1.2s;/*transition*/
+	
+}
+.container:hover > img {
+	outline: 3px solid red;	
+	position: relative;
+	left: 0;
+	top: 0;
+	
+	
+}

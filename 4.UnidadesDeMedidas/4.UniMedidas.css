@@ -1,0 +1,51 @@
+.font-size {
+    /*Un "em" es una medida o tamaño que se le puede dar a una etiqueta
+y "1 em" por defecto vale "16px", pero si establecemos la medida mediante 
+un "font-size" para la caja contenedora que es el "div"au tomaticamente
+ 1un"em" valdra la medida que establescamos ala caja "padre" a si que las
+ etiquetas que esten dentro de las  las cajas hijas tomaran por defecto la 
+ medida que le allamos puesto*/
+    font-size: 20px;
+    /*MEDIDA ESTABLECIDA POR NOSOTROS*/
+}
+
+.front-size__h2 {
+    /*la etiqueta "h2" es una caja hija que esta dentro del "div"
+que es la caja padre asi que si ledamos el tamaño de "4 em" se agrandara
+ a "80px" porque ya emos establecido en la caja padre que es el "div" que 
+ "1em" valga "20px" lo que estamos asinedo esque estamos eredando esa medida
+ a la caja hija que es el "h2" por ende multiplicamos 20px x 4em es igial a 80px*/
+    font-size: 4em;
+    /*el tamaño de letra sera de 80px*/
+}
+
+* {
+    /*con el asterisco seleccionamos todo*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.background {
+    /*este es el segundo "div"*/
+}
+
+.background__h2 {
+    /*esta es como nombramos el "h2" dentro del "div"*/
+    background-color: #ef2;
+    /*con esto damos color de fondo ala etiqueta*/
+    width: 40vw;
+    /*con esto damos el ancho a la etiqueta */
+    height: 20vh;
+    /*con esta damos el alto a la etiqueta*/
+    color: #00f;
+    /* y con esta le damos color a el texto dentro de la la caja H2 */
+}
+
+.caja {
+    width: 500px;
+    height: 400px;
+    background: blueviolet;
+    text-align: center;
+    font-size: 30px;
+    color: greenyellow;
+}

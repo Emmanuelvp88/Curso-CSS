@@ -1,0 +1,35 @@
+/*El "Padding" se encarga de darnos un relleno dentro de la caja. arriba,abajo,
+izquierda, derecha, el cual nos repercute directamente en el texto moviendolo 
+y tamaño de la caja. sumando sus PX a la caja asiendola mas grande.
+"padding-top" arriba. "padding-bottom" abajo. "padding-left" izquierda.
+"padding-right" derecha*/
+
+.Padding-div__h2--0{
+	color: red;
+	background-color: gray;
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 40px;
+	padding-left: 60px;
+	
+}
+
+.Padding-div__h2--1{
+	color: violet;
+	background-color: yellow;
+	display: inline-block;
+	padding: 10px;/*El "paddiing" afecta directamente al texto dandole bordes
+	y sumando los pixeles ala caja, por consecuente modifica el tamaño de la caja.*/
+	height: 100px;
+	width: 100px;
+	box-sizing: border-box; /*Este parametro hace que se respete el tamaño original
+	de la caja que le dimos con el "heigth" y "width" lo que hace es sumar los PX del
+	"padding" a la caja terminando con el tamaño original la caja.*/
+	text-align: center;/*Este atributo sirve para centrar el texto*/
+}
+
+/*NOTA: cuando abreviamos colocando las medidas una tras otra (padding: 10px 20px 15px 30px ;)
+comenzara a ejecutarse en sentido de las manecillas del reloj, "padding-top" terminando con
+"Padding-left" si solo queremos la misma medida para todos los lados devemos poner una sola
+medida y la tomara para todos los lados*/
+

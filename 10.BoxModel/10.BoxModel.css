@@ -1,0 +1,37 @@
+/*El "BOX-MODEL" o modelo de caja, consiste en darle todas las propiedades
+posibles a una caja para que se vea agradable a la vista del usuario final.*/
+
+/*BoxModel tiene muchos atributos para cambiar las propiedades de una caja
+veamos algunas:  el "content" es el contenido de una caja eso viene siendo
+el texto dentro de una caja y se cambia con un "line-heigth"
+EL padding es la separacion del "content" osea el texto dentro de la caja
+con los bordes de la misma se le de valor con "padding".
+El border es el borde de la caja y se cambia con el atributo "border"
+El margin es el margen o la distancia que tienen las cajas osea la separacion
+entre caja y caja y se maneja con el "margin" */
+
+.propiedades-div__h2{
+	color: blue;/*Color de contenido "texto"*/
+	background: violet;/*Color de fondo de caja*/
+	display: inline-block;/*convierte un elemento en bloque a en linea pero
+	conservando sus caracteristicas de elemento en bloque*/
+	box-sizing: border-box;/*Hace respetar el tamaño de la caja*/
+	text-align: center;/*Linea el contenido "texto"*/
+	padding: 60px 20px;/*Da margenes o espacios entre el contenido y la caja*/
+	margin: 10px;/*Da margenes o espacios entre caja y caja */
+	border-radius: 1em;/*Redondea los bordes de la caja*/
+	border: 3px solid red;/*Da un borde lineado a la caja*/
+	height: 30vh;/*Da el Tamaño de altura a la caja */
+	width: 40vw;/*Da el tamano de anchura a la caja*/
+	box-shadow: 20px 10px 10px 5px #000;/*Sombra a la caja: "Primer parametro"
+	[grosor lado derecho], "Segundo": [grosor de abajo], "Tercero": 
+	[Difuminado,Desvanecido o Desenfoque] de toda la sombra, "Cuarto": es el
+	[Grosor del contorno del difumindo]  */
+	text-shadow: 20px 10px 10px #000;/*Da sombra al texto y los parametros se 
+	ingresan de el mismo modo y orden que un "box-shadow"*/
+
+	/*NOTA: Para mas intensidad de sombra tenemos que copiar los parametros
+	y volverlos a pegar EJEMPLO: text-shadow: 20px 10px 10px #000, 20px 10px 10px #000;*/
+
+	transform: rotate(45deg);/*damos rotacion a la caja*/
+}

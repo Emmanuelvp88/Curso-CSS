@@ -1,0 +1,55 @@
+/*ABSOLUTE: lo que hace esque nos quita el espacio reservado por defecto que abarca cada caja
+haciendo que practicamene todas las cajas ocupen el mismo espacio reservado y que queden una
+encima de la otra, hace que las cajas pierdan su elemento que las contiene tomando asi su 
+punto de referencia ya sea una caja padre que la contenga siempre y cuando esta este posicionada
+y en caso de que no se movera libremente por el "viewport" que sera su inico contenedor, aparte
+de que que hace que todas las cajas actuen como si furan "inline" asindo que se ácoplen a su contenido.*/
+
+div {
+    width: 100px;
+    height: 100px;
+    background: #ff0;
+    font-family: cursive;
+    font-size: 30px;
+    border: 3px solid #f00;
+    position: absolute;
+}
+
+.contenedor {
+    width: 450px;
+    height: 450px;
+    background: #0f0;
+    margin: auto;
+    position: relative;
+    /*Este possition:relative se puso para eu el margin auto surtiera efecto*/
+}
+
+.caja1 {
+    left: 0;
+}
+
+.caja2 {
+    right: 0;
+}
+
+.caja3 {
+    bottom: 0;
+    right: 0;
+}
+
+.caja4 {
+    bottom: 0;
+}
+
+.caja5 {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+a {
+    font-size: 1.4em;
+    font-weight: blod;
+}

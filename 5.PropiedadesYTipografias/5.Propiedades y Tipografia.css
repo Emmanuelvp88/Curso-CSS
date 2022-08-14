@@ -1,0 +1,12 @@
+.form-tipografia__h2{
+	color: red;/*Color de letra*/	
+	background-color: #999;/*Fondo de color de la etiqueta*/		
+	line-height: 2;/* Nos permite dar separaciones entre letras*/
+	font-size: 3em;/*tamaño de letra*/
+	font-weight: 200;/*Grosor de letra*/
+	width: 40vw;/*Ancho de etiqueta*/
+	height: 20vh;/*Alto de etiqueta*/
+	font-family: georgia;/*tipo de letra*/	
+	font-family: licorice;/*tipografia exportada desde Google-fonts*/
+	font-family: 'Lobster', cursive;/*Tpografia exportada desde Gogle fonts*/
+}

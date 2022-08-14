@@ -1,0 +1,18 @@
+.pseudoclase p:hover{/*el elemento "hover" nos da laposibilidad de cambiar el 
+color de la letra solo cuando pasemos el puntero por arriba de la letra
+con el color seleccionado que le dimos.*/
+	color:  red;
+}
+.pseudoclase b:hover{
+	color: royalblue;
+}
+.pseudoclase span:hover{
+	color: greenyellow;
+}
+
+/*NOTA:  Si le damos color a la etiqueta "padre" automaticamente se pondran del mismo 
+color las etiquetas que esten dentro de ella ose las etiquetas "hijas"
+tendremos que hacer otro selector incluyendo a la hija como elemeno desendiente
+EJEMPLO: .pseudoclase b   ".pseudoclase" es la clase padre, y "p" viene siendo
+la clase hija, se tiene que poner de manera desendiente para darle color 
+doferente a la etuqueta hija.*/

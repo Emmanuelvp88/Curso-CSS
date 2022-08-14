@@ -1,0 +1,23 @@
+/*El "position: sticky;" simplemenete como su nombre en ingles "pegajoso"
+es como una mezcla entre el "fixed" y el "relative" lo que hace es pegarse
+a sierto margen de "viewport" dependiendo el "margin" que le demos de echo 
+es necesario darle un "top: 0;" deperdida para que pueda hacer su funcion
+sino definimos nada simplemente actuara como otra caja mas, no se detendra cuando 
+llegue al "top del viewport", sin embargo este no quita el espacio reservado
+en memoria de la caja como un "relative" pero permite deslizar hacia abajo
+el contenido de la pagina quedando el en el top del viewport, como si fuera
+un "fixed", combina lo mejor de ambos.*/
+
+
+div{
+	font-family:  cursive;
+	font-size: 30px;
+	font-weight: 100px;
+}
+.sticky{
+	background: red;
+	position: sticky;
+	opacity: .7;/*opacidad o trasparencia del elemento el cual va del 0 al 1*/
+	top: 20px;/*depende del top que le demos va quedar separado del viewport
+	cuando llegue al top de este.*/
+}
