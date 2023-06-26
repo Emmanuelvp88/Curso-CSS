@@ -4,7 +4,7 @@
 	color:red;
 }
 h1{/*Selector por Tipo: todas las etiqueetas de tipo "h1" cambiaran del color
-     Seleccionado*/
+    Seleccionado*/
 	color: blue;
 }
 .por-clase{/*Selector por Clase: todas las Etiquetas que tengan la en nombre
