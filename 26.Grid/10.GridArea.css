@@ -6,8 +6,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-areas: "emma emma emma" "main aside aside" "main aside aside" "footer footer footer";
-    /*  */
-    height: 1000px;
+    height: 100vh;
     border: 3px solid #000;
 }
 
